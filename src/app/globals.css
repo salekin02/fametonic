@@ -36,50 +36,6 @@
 
   /* Add brand color variables */
   --color-brand: #0073e6;
-  --color-brand-50: #e6f1fd;
-  --color-brand-100: #b0d4f7;
-  --color-brand-200: #8abff4;
-  --color-brand-300: #54a1ee;
-  --color-brand-400: #338feb;
-  --color-brand-500: #0073e6;
-  --color-brand-600: #0069d1;
-  --color-brand-700: #0052a3;
-  --color-brand-800: #003f7f;
-  --color-brand-900: #003061;
-  --color-brand-950: #002852;
-  --color-brand-1000: #002142;
-
-  /* Neutral color palette */
-  --color-neutral-50: #ffffff;
-  --color-neutral-100: #fafafa;
-  --color-neutral-200: #f5f5f5;
-  --color-neutral-300: #f1f1f1;
-  --color-neutral-400: #dcdcdc;
-  --color-neutral-500: #c5c5c5;
-  --color-neutral-600: #969696;
-  --color-neutral-700: #676767;
-  --color-neutral-800: #545454;
-  --color-neutral-900: #383838;
-  --color-neutral-950: #313131;
-  --color-neutral-1000: #151515;
-
-  --color-danger-50: #fdeeec;
-  --color-danger-100: #facdc7;
-  --color-danger-200: #f6aca2;
-  --color-danger-300: #f28b7d;
-  --color-danger-400: #ef6a58;
-  --color-danger-500: #eb4932;
-  --color-danger-600: #df2e16;
-  --color-danger-700: #ba2712;
-  --color-danger-800: #951f0e;
-  --color-danger-900: #70170b;
-  --color-danger-950: #4a0f07;
-  --color-danger-1000: #250804;
-
-  --color--border: #fafafa;
-  --color--black: #151515;
-  --color--background: #f7f7f7;
-  --color--background-secondary: #f2f2f2;
 }
 
 :root {
@@ -220,24 +176,18 @@
 @layer base {
   :root {
     --font-open-sauce-sans: "Open Sauce Sans", sans-serif;
-    --font-agbalumo: "Agbalumo", system-ui;
-    --font-inter: "Inter", sans-serif;
-    --font-geist-mono: "Geist Mono", monospace;
+    --font-figtree: "Figtree";
   }
+
   /* Global styles */
   body {
-    font-family: var(--font-open-sauce-sans);
+    font-family: var(--font-figtree);
     font-weight: 400;
   }
 }
+
 .font-sans {
   font-family: var(--font-open-sauce-sans);
-}
-.font-mono {
-  font-family: var(--font-geist-mono);
-}
-.font-\[Agbalumo\] {
-  font-family: var(--font-agbalumo);
 }
 
 .font-\[Inter\] {
@@ -248,6 +198,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
