@@ -19,7 +19,11 @@ export const metadata: Metadata = {
   description: "Discover your way to success with Fametonic. Start growing your influence, create viral content, and learn from expert-led courses designed for aspiring influencers.",
   keywords: "social media, influencer, TikTok, Instagram, content creation, AI, courses",
   authors: [{ name: "Fametonic" }],
-  viewport: "width=device-width, initial-scale=1",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
