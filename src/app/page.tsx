@@ -5,13 +5,13 @@ export default function Home() {
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* Promotional Banner */}
       <div className="bg-[linear-gradient(90deg,#FC004E_-2.16%,#10CBE0_115.27%)] md:bg-[linear-gradient(90deg,#FC004E_0%,#10CBE0_100%)] text-center p-5 md:py-2.5 md:px-4">
-          <div className=" leading-[normal]"> <span className="text-[#00E7F9] font-extrabold text-base-[16px] md:text-[22px]">
-            <span className="text-sm md:text-[19px]">🚀</span> FRESH BEGINNINGS SALE: </span>
-             <span className="font-bold text-[#fff] text-sm md:text-[22px]">Extra 25% OFF, Limited Spots - start your journey today!</span>
-          </div>
+        <div className=" leading-[normal]"> <span className="text-[#00E7F9] font-extrabold text-base-[16px] md:text-[22px]">
+          <span className="text-sm md:text-[19px]">🚀</span> FRESH BEGINNINGS SALE: </span>
+          <span className="font-bold text-[#fff] text-sm md:text-[22px]">Extra 25% OFF, Limited Spots - start your journey today!</span>
+        </div>
       </div>
 
-      <div className="px-6 pb-28 md:px-6 xl:px-[211px] mt-[35px] relative">
+      <div className="px-6 pb-28 md:px-6 xl:px-[211px] mt-4 md:mt-[35px] relative">
         {/* Navigation */}
         <nav className="flex items-center justify-center md:justify-between relative z-9 relative">
           <div className="flex items-center">
@@ -22,12 +22,12 @@ export default function Home() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8 text-lg">
-            <button className="text-[#A9A9A9] hover:text-cyan-400 transition-colors">About us</button>
-            <button className="text-[#A9A9A9] hover:text-cyan-400 transition-colors">Contact</button>
+            <button className="text-[#A9A9A9] hover:text-cyan-400 transition-colors cursor-pointer">About us</button>
+            <button className="text-[#A9A9A9] hover:text-cyan-400 transition-colors cursor-pointer">Contact</button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden text-white absolute right-0">
+          <button className="md:hidden text-white absolute right-0 cursor-pointer">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -35,12 +35,23 @@ export default function Home() {
         </nav>
 
         {/* Main Content */}
-        <Image className="absolute right-0 left-4 md:right-40 xl:right-53.5 top-5 md:top-1.5 z-1 w-[330px] md:w-full h-[426px] md:h-100% max-w-[666px]" src="/assets/images/hero-section.png" width={666} height={679} alt="Hero Image" />
-        <div className="container mx-auto mt-94 md:mt-[57px]">
+        <Image
+          className="absolute md:w-[550px] h-auto lg:w-[666px] -1 w-[330ppx]
+                    left-1/2 -translate-x-1/2 top-[25px] 
+                    md:left-auto md:-translate-x-0 md:right-[10px] md:top-1.5 
+                    lg:right-40
+                    xl:right-52.5 px-10 md:px-0"
+          src="/assets/images/hero-section.png"
+          width={666}
+          height={679}
+          alt="Hero Image"
+          priority
+        />
+        <div className="container mx-auto mt-78 md:mt-[57px]">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-9">
             {/* Left Content */}
             <div className="space-y-2 lg:space-y-4 order-2 lg:order-1">
-              <div className="font-[urbanist]">
+              <div className="font-[urbanist] text-center md:text-left">
                 <h1 className="text-[25px] md:text-[35px] font-bold leading-[normal]">
                   Want to Turn Social Media Into a Profitable Career?
                 </h1>
@@ -71,7 +82,7 @@ export default function Home() {
 
               {/* CTA Button */}
               <div className="space-y-2.5 my-7.5 w-[313px]">
-                <button className="font-[figtree] w-full flex gap-2.5 items-center justify-center px-10 py-2 rounded-[10px] bg-[#FC004E] shadow-[2px_2px_10px_0px_#00E7F9] text-white font-figtree text-[20px] font-bold leading-[normal]">
+                <button className="font-[figtree] w-full flex gap-2.5 items-center justify-center px-10 py-2 rounded-[10px] bg-[#FC004E] shadow-[2px_2px_10px_0px_#00E7F9] text-white font-figtree text-[20px] font-bold leading-[normal] cursor-pointer">
                   GET STARTED
                   <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
                     <path d="M7.19238 6.26465C7.60266 6.67918 7.60225 7.33287 7.19141 7.74707L2.29102 12.6875L2.21094 12.7607C1.79676 13.1024 1.19607 13.078 0.808594 12.6875C0.607462 12.4847 0.50002 12.2157 0.5 11.9512L0.5 11.7451L0.538086 11.707C0.543678 11.6826 0.54827 11.6578 0.555664 11.6338L0.591797 11.5352C0.644656 11.4108 0.722378 11.2983 0.819336 11.2041L0.818359 11.2041L4.97949 7L0.818359 2.7959L0.819336 2.79492C0.408805 2.3804 0.4084 1.72679 0.819336 1.3125C1.23271 0.895833 1.88939 0.895784 2.30273 1.3125L2.30273 1.31348L7.19238 6.26465Z" fill="white" stroke="white" />
